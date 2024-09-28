@@ -4,11 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 3000",
-    "build-dev": "vite build",
-    "build-prod": "vite build --config vite.prod.config.ts",
-    "build-vercel": "(cd ../../ && node ./scripts/build.js) && npm run build-dev",
-    "preview": "vite preview"
+    "start": "vite --host --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch": "tsc -w"
   },
   "dependencies": {
     "@excalidraw/excalidraw": "^0.17.0",
@@ -42,8 +41,11 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@types/lodash-es": "^4.14.182",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
     "rollup-plugin-copy": "^3.5.0",
+    "typescript": "^5.6.2",
     "vite": "^5.2.11",
     "vite-plugin-replace": "^0.1.1"
   },
